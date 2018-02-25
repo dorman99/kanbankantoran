@@ -4,7 +4,7 @@
   <div class="modal-card">
     <header class="modal-card-head">
       <p class="modal-card-title">Input New Task</p>
-      <button class="delete" aria-label="close"></button>
+      <button @click="closemodal" class="delete" aria-label="close"></button>
     </header>
  <div class="card">
   <header class="card-header">
@@ -40,7 +40,7 @@
 
     <footer class="modal-card-foot">
       <button @click="newkanban" class="button is-success">Create New Task</button>
-      <button class="button">Cancel</button>
+      <button @click="closemodal" class="button">Cancel</button>
     </footer>
   </div>
 </div>
@@ -66,6 +66,9 @@ export default {
       kanban.push(this.newTask)
       this.$emit('done')
       this.newTask = {}
+    },
+    closemodal () {
+      this.$emit('done')
     }
   }
 }
