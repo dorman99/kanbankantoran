@@ -65,6 +65,7 @@ export default {
     newkanban () {
       kanban.push(this.newTask)
       this.$emit('done')
+      this.newTask = {}
     }
   }
 }
