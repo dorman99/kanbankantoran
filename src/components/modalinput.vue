@@ -65,7 +65,12 @@ export default {
     newkanban () {
       kanban.push(this.newTask)
       this.$emit('done')
-      this.newTask = {}
+      this.newTask = {
+        task: '',
+        point: '',
+        to: '',
+        status: 0
+      }
     },
     closemodal () {
       this.$emit('done')
