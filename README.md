@@ -1,6 +1,8 @@
 # kanbankantoran
 ## Vuex + Firebase web-app
 
+[http://kanban.abdillahh.com](http://kanban.abdillahh.com)
+
 TagLine : Kaku kek Orang Kantoran ! :3
 
 ``` bash
